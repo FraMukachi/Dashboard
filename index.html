@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Emplo Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+    <header>
+        <div class="logo">Emplo</div>
+        <nav>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>People</li>
+                <li>Hiring</li>
+                <li>Devices</li>
+                <li>Apps</li>
+                <li>Salary</li>
+                <li>Calendar</li>
+                <li>Reviews</li>
+            </ul>
+        <div class="settings">⚙️</div>
+        </nav>
+    </header>
+
+    <section class="main">
+      <div class="greeting">
+        <h1>Welcome in, Emplo</h1>
+        <div class="stats">
+          <span>Interviews: 15%</span>
+          <span>Hired: 15%</span>
+          <span>Output: 10%</span>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <img src="./img/1.jpeg" alt="Lora" />
+        <div class="info">
+          <h2>Francis Mujakachi</h2>
+          <p>FullStack Developer</p>
+          <span class="badge">R1,200</span>
+        </div>
+      </div>
+
+      <div class="widget">
+        <h3>Progress</h3>
+        <p>Work Time This Week: <strong>6.1h</strong></p>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="widget">
+        <h3>Time Tracker</h3>
+        <canvas id="doughnutChart"></canvas>
+        <p class="time">02:35</p>
+      </div>
+
+      <div class="widget">
+        <h3>Employees</h3>
+        <p>78 Employees, 56 Hirings, 203 Projects</p>
+      </div>
+
+      <div class="widget onboarding">
+        <h3>Onboarding</h3>
+        <div class="progress">
+          <div class="bar" style="width: 30%"></div>
+        </div>
+        <p>18% Completed</p>
+        <ul>
+          <li>Project Update</li>
+          <li>Task Discussion</li>
+          <li>Goals</li>
+          <li>HR Policy</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
